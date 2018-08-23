@@ -1,0 +1,111 @@
+---
+swagger: "2.0"
+x-collection-name: AWS S3
+x-complete: 0
+info:
+  title: AWS S3 GET Bucket accelerate
+  version: 1.0.0
+  description: This implementation of the GET operation uses the acceleratesubresource
+    to return the Transfer Acceleration state of a bucket, which is eitherEnabled
+    or Suspended
+basePath: /
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /:
+    delete:
+      summary: DELETE Bucket
+      description: This implementation of the DELETE operation deletes the bucket
+        named inthe URI
+      operationId: delete-bucket
+      x-api-path-slug: delete
+      responses:
+        200:
+          description: OK
+      tags:
+      - Bucket
+    head:
+      summary: HEAD Bucket
+      description: This operation is useful to determine if a bucket exists and you
+        have permission to accessit
+      operationId: head-bucket
+      x-api-path-slug: head
+      responses:
+        200:
+          description: OK
+      tags:
+      - Bucket
+    post:
+      summary: POST Object
+      description: The POST operation adds an object to a specified bucket using HTML
+        forms
+      operationId: post-object
+      x-api-path-slug: post
+      responses:
+        200:
+          description: OK
+      tags:
+      - Object
+    put:
+      summary: PUT Bucket
+      description: This implementation of the PUT operation creates a new bucket
+      operationId: put-bucket
+      x-api-path-slug: put
+      parameters:
+      - in: header
+        name: x-amz-acl
+        description: The canned ACL to apply to the bucket you are creating
+      - in: header
+        name: x-amz-grant-full-control
+        description: Allows grantee the READ, WRITE, READ_ACP, and WRITE_ACP permissions
+          on thettttttttttttbucket
+      - in: header
+        name: x-amz-grant-read
+        description: Allows grantee to list the objects in the bucket
+      - in: header
+        name: x-amz-grant-read-acp
+        description: Allows grantee to read the bucket ACL
+      - in: header
+        name: x-amz-grant-write
+        description: Allows grantee to create, overwrite, and delete any object in
+          the bucket
+      - in: header
+        name: x-amz-grant-write-acp
+        description: Allows grantee to write the ACL for the applicable bucket
+      responses:
+        200:
+          description: OK
+      tags:
+      - Bucket
+  /?accelerate:
+    get:
+      summary: GET Bucket accelerate
+      description: This implementation of the GET operation uses the acceleratesubresource
+        to return the Transfer Acceleration state of a bucket, which is eitherEnabled
+        or Suspended
+      operationId: get-bucket-accelerate
+      x-api-path-slug: accelerate-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Bucket
+      - Accelerate
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

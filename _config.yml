@@ -1,10 +1,11 @@
-title: Streamdata Gallery
-url: organization.api.streamdata.gallery
-tag: Organization
+title: Streamdata API Gallery - AWS S3
+description: A gallery of APIs to demonstrate what is possible when it comes to making data, content, and algorithms more real time, and event-driven as part of the API economy.
+url: aws-s3.streamdata.gallery
+tag: AWS S3
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery
-github_repo: payments
+github_user: streamdata-gallery-entities
+github_repo: aws-s3
 github_branch: master
 collections:
   listings:
