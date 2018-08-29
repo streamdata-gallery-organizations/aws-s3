@@ -14,8 +14,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: AWS S3
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-29"
+modified: "2018-08-29"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/apis.md
 specificationVersion: "0.14"
 apis:
@@ -338,6 +338,43 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/listtype2-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/listtype2-get-openapi.md
+- name: No Title - GET Bucket location
+  x-api-slug: location-get
+  description: This implementation of the GET operation uses thelocation subresource
+    to return a bucket's region
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/location-get-openapi.md
+- name: No Title - GET Bucket logging
+  x-api-slug: logging-get
+  description: This implementation of the GET operation uses thelogging subresource
+    to return the logging status of a bucketand the permissions users have to view
+    and modify that status
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/logging-get-openapi.md
+- name: No Title - List Bucket Metrics
+  x-api-slug: metrics-get
+  description: Lists the metrics configurations for the CloudWatch request metrics
+    of the bucket
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/metrics-get-openapi.md
 - name: No Title - DELETE Bucket Metrics
   x-api-slug: metricsampidid-delete
   description: Deletes a metrics configuration for the CloudWatch request metrics
@@ -450,6 +487,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/policy-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/policy-put-openapi.md
+- name: No Title - DELETE Bucket replication
+  x-api-slug: replication-delete
+  description: Deletes the replication subresource associated with the specified bucket
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/replication-delete-openapi.md
 - name: No Title - GET Bucket replication
   x-api-slug: replication-get
   description: Returns the replication configuration information set on the      bucket
@@ -519,6 +567,41 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/tagging-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/tagging-put-openapi.md
+- name: No Title - List Multipart Uploads
+  x-api-slug: uploads-get
+  description: This operation lists in-progress multipart uploads
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/uploads-get-openapi.md
+- name: No Title - GET Bucket versioning
+  x-api-slug: versioning-get
+  description: This implementation of the GET operation uses theversioning subresource
+    to return the versioning state of abucket
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/versioning-get-openapi.md
+- name: No Title - PUT Bucket versioning
+  x-api-slug: versioning-put
+  description: This implementation of the PUT operation uses theversioning subresource
+    to set the versioning state of anexisting bucket
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/versioning-put-openapi.md
 - name: No Title - GET Bucket Object versions
   x-api-slug: versions-get
   description: You can use the versions subresource to list metadata about all ofthe
@@ -533,6 +616,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/versions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/versions-get-openapi.md
+- name: No Title - DELETE Bucket website
+  x-api-slug: website-delete
+  description: This operation removes the website configuration for a bucket
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/website-delete-openapi.md
 - name: No Title - GET Bucket website
   x-api-slug: website-get
   description: This implementation of the GET operation returns the website configurationassociated
@@ -590,6 +684,30 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectname-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectname-delete-openapi.md
+- name: No Title - GET Object
+  x-api-slug: objectname-get
+  description: This implementation of the GET operation retrieves objects from Amazon
+    S3
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectname-get-openapi.md
+- name: No Title - HEAD Object
+  x-api-slug: objectname-head
+  description: The HEAD operation retrieves metadata from an object without returning
+    theobject itself
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectname-head-openapi.md
 - name: No Title - OPTIONS object
   x-api-slug: objectname-options
   description: A browser can send this preflight request to Amazon S3 to determine
@@ -617,6 +735,31 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectname-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectname-put-openapi.md
+- name: No Title - GET Object ACL
+  x-api-slug: objectnameacl-get
+  description: This implementation of the GET operation uses the aclsubresource to
+    return the access control list (ACL) of an object
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnameacl-get-openapi.md
+- name: No Title - PUT Object ACL
+  x-api-slug: objectnameacl-put
+  description: This implementation of the PUT operation uses the aclsubresource to
+    set the access control list (ACL) permissions for an object that alreadyexists
+    in a bucket
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnameacl-put-openapi.md
 - name: No Title - Upload Part
   x-api-slug: objectnamepartnumberpartnumberampuploadiduploadid-put
   description: This operation uploads a part in a multipart upload
@@ -630,6 +773,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnamepartnumberpartnumberampuploadiduploadid-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnamepartnumberpartnumberampuploadiduploadid-put-openapi.md
+- name: No Title - POST Object restore
+  x-api-slug: objectnamerestoreampversionidversionid-post
+  description: Restores a temporary copy of an archived object
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnamerestoreampversionidversionid-post-openapi.md
 - name: No Title - GET Object tagging
   x-api-slug: objectnametagging-get
   description: This implementation of the GET operation returns the tags associated
@@ -672,6 +826,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnametorrent-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnametorrent-get-openapi.md
+- name: No Title - Abort Multipart Upload
+  x-api-slug: objectnameuploadiduploadid-delete
+  description: This operation aborts a multipart upload
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonS3.png
+  humanURL: https://aws.amazon.com/s3/
+  baseURL: https:////
+  tags: Amazon Web Services, Storage, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-s3/master/_listings/aws-s3/objectnameuploadiduploadid-delete-openapi.md
 - name: No Title - List Parts
   x-api-slug: objectnameuploadiduploadid-get
   description: This operation lists the parts that have been uploaded for a specific
